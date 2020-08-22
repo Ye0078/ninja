@@ -9,6 +9,6 @@
     "male": false,
     "name": "Honey",
     "age": 21,
-    "city": "Yangon"
+    "city": "ရန်ကုန်မြို့"
   }
 ]

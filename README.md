@@ -7,7 +7,7 @@
   },
   {
     "male": false,
-    "name": "Honey",
+    "name": "lee",
     "age": 21,
     "city": "ရန်ကုန်မြို့"
   }

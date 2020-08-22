@@ -1,2 +1,12 @@
-# ninja
-Tharyarwaddy
+  {
+    "male": true,
+    "name": "Khun Htetz Naing",
+    "age": 20,
+    "city": "HsiHseng"
+  },
+  {
+    "male": false,
+    "name": "Honey",
+    "age": 21,
+    "city": "Yangon"
+  }

@@ -10,11 +10,5 @@
     "name": "Honey",
     "age": 21,
     "city": "Yangon"
-  },
-{
-    "male": false,
-    "name": "Honey",
-    "age": 21,
-    "city": "Yangon"
   }
 ]

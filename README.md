@@ -3,7 +3,7 @@
     "male": true,
     "name": "Ye Lin Naing",
     "age": 20,
-    "city": "HsiHseng"
+    "city": "သာယာ၀တီ"
   },
   {
     "male": false,

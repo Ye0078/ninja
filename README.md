@@ -1,7 +1,7 @@
 [
   {
     "male": true,
-    "name": "Khun Htetz Naing",
+    "name": "Ye Lin Naing",
     "age": 20,
     "city": "HsiHseng"
   },

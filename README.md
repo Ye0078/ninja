@@ -1,4 +1,5 @@
-  [{
+[
+  {
     "male": true,
     "name": "Khun Htetz Naing",
     "age": 20,
@@ -9,4 +10,5 @@
     "name": "Honey",
     "age": 21,
     "city": "Yangon"
-  }]
+  }
+]

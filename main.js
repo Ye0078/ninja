@@ -1,53 +1,41 @@
+// clac days
+var firstDay = new Date("2021-09-07");
+var now = new Date();
+var toFirst = firstDay.getTime();
+var toNow = now.getTime();
+var clacLoveDay = (toNow - toFirst) / (1000 * 60 * 60 * 24);
+var loveDay = Math.floor(clacLoveDay) + 1;
 
+document.querySelector("#accent").innerHTML = loveDay + " days";
 
-function format(t){
-    var s = new Date('2018-03-18'), 
-    st = s.getTime(),
-    n = Date.now(),
-    d = (n - st) / (60 * 60 * 1000 * 24), // 天数
-    d1 = parseInt((n - st) / (60 * 60 * 1000 * 24)),
-    h =  d - d1,
-    h1 = parseInt(h * 24), // 小时
-    m = h * 24 - h1,
-    m1 = parseInt(m * 60) > 10 ? parseInt(m * 60) : '0'+parseInt(m * 60), // 分钟
-    ss = m * 60 - m1,
-    ss1 = parseInt(ss * 60) > 10 ? parseInt(ss * 60) : '0'+parseInt(ss * 60) //秒
+// calc anniversary : days
+function calcDays(days) {
+    var dayms = toFirst + days * (1000 * 60 * 60 * 24);
+    var DAY = new Date(dayms);
+    var year = DAY.getFullYear();
+    var month = DAY.getMonth() + 1;
+    var date = DAY.getDate() - 1;
 
-  switch(t){
-    case 'date':
-      return d1
-    case 'hour':
-      return (Number(h1) + 8) > 10 ? Number(h1) + 8 : '0' + (Number(h1) + 8)
-    case 'min':
-      return m1;
-    case 'second':
-      return ss1;
-  }
+    document.querySelector(`#date${days}`).innerHTML = `${year}. ${month}. ${date}`;
 }
 
-var HelloMessage = React.createClass({
-  getInitialState: function() {
-    return {date: '', 
-            colors: ['#FFC125', '#EE5C42', '#7A67EE', '	#5CACEE', '#00F5FF', '#00688B'], currentColor: '#b8bec5'};
-  },
-  renderDate(){
-      return format('date') + ' 天 ' + format('hour') + ' 小时 ' + format('min') + ' 分 ' + format('second') + ' 秒'
-  },
-  componentDidMount(){
-     // console.log('123123');
-    var that = this;
-    var timer = setInterval(function(){
-      that.setState({
-        date: that.renderDate(),
-        currentColor: that.state.colors[Math.floor(Math.random() * 5)]
-      })
-    }, 1000)
-  },
-  render: function() {
-    return (<div>
-        <h1></h1>
-        <h2 style={{color: this.state.currentColor}}>{this.state.date}</h2></div>)
-  }
-});
+// calc anniversary : years
+function calcYearDays(yearDays) {
+    var dayms = toFirst + yearDays * (1000 * 60 * 60 * 24);
+    var DAY = new Date(dayms);
+    var year = DAY.getFullYear();
+    var month = DAY.getMonth() + 1;
+    var date = DAY.getDate();
 
-ReactDOM.render(<HelloMessage/>, document.getElementById('app'))
+    document.querySelector(`#date${yearDays}`).innerHTML = `${year}. ${month}. ${date}`;
+}
+
+
+// execute function
+calcDays(100);
+calcDays(200);
+calcDays(300);
+calcDays(400);
+calcDays(500);
+
+calcYearDays(365);

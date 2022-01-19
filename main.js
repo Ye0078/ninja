@@ -1,7 +1,7 @@
 
 
 // clac days
-var firstDay = new Date("2021-12-16");
+var firstDay = new Date("2021-9-7");
 var now = new Date();
 var toFirst = firstDay.getTime();
 var toNow = now.getTime();

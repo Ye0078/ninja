@@ -1,4 +1,7 @@
-img{
- width:auto;
- height:auto;
-}
+
+body {
+  background-image: url('Magic.gif');
+  background-repeat: no-repeat;
+  background-attachment: fixed;
+  background-position: center bottom;
+

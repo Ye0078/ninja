@@ -1,7 +1,12 @@
+@keyframes slide {
+  0% { transform: translateX(-55%); }
+  100% { transform: translateX(0%); }
+}
+div {
+  height: 5px;
+  width: 250%;
+  background: linear-gradient(to right, red, yellow, green, blue, magenta, pink, red, yellow, green, blue, magenta, pink);
+  animation: slide 2s 0s infinite linear; /* arg[1]: slide speed */
+}
 
-body {
-  background-image: url('499E6DB7-24FE-4027-B718-9BBBB042103B.gif');
-  background-repeat: no-repeat;
-  background-attachment: fixed;
-  background-position: center bottom;
-
+body { background-color: black; overflow:hidden; }
